@@ -1,1 +1,1 @@
-https://pasan53.github.io/IT-WEB-23-63-0029-Pasan_Widyutha-Q1/
+A simple, elegant and responsive website built using HTML5, CSS3 and Bootstrap.
