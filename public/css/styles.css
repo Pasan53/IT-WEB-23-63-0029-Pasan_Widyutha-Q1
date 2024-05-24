@@ -1,0 +1,416 @@
+
+:root{
+    --secondary-color: rgb(81, 81, 209);
+    --border-color:  rgb(233, 233, 233);
+    --bg-color01: rgb(91, 91, 180);
+    --bg-color02: rgb(37, 245, 245);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-style: "Poppins", sans-serif;
+}
+
+
+/* Setting color size for the Nav Brand */
+header .navbar-brand {
+    font-weight: bold;
+    color: var(--secondary-color);
+    font-size: 2rem;
+}
+
+/* Making sure that the color doesn't change when hovered over on Nav Brand */
+header .navbar-brand:hover {
+    color: var(--secondary-color);
+}
+
+/* Making sure that the color doesn't change when clicked over on Nav Brand */
+header .navbar-brand:visited {
+    color: var(--secondary-color);
+}
+
+header .nav-item {
+    border: 3px solid var(--bg-color01);
+    border-radius: 50px;    
+}
+
+header .nav-link {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+header .nav-item:hover {
+    background-color: var( --bg-color02);
+    padding: 2px;
+}
+
+#heroSec01 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-container {
+    margin-bottom: 200px;
+}
+
+#heroSec01 h1 {
+    font-size: 3.6rem;
+    font-weight: 800;
+}
+
+#heroSec01 p {
+    color: rgb(159, 153, 153);
+    font-size: 1.2rem;
+    text-align: left;
+}
+
+#heroSec01 div {
+    margin-top: 40px;
+}
+
+#heroSec01 input {
+    padding: 10px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    width: 350px;
+    border: 1px solid var(--border-color);
+    
+}
+
+#heroSec01 button {
+    width: 150px;
+    padding: 10px;
+    background-color: var(--bg-color01);
+    border: none;
+    
+}
+
+#heroSec02 img {
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.featuredServices {
+    margin-bottom: 150px;
+    
+}
+
+
+.featuredServices h2 {
+    text-align: center;
+    margin-bottom: 60px;
+    font-weight: bolder;
+}
+
+
+.featuredServices #cards {
+    justify-content: center;
+}
+
+.featuredServices #cards .card {
+    margin-right: 50px;
+    border: none;
+    border-radius: 5px;
+    height: 400px;
+    margin-top: 15px;
+}
+
+.featuredServices #cards {
+    height: 450px;
+
+}
+
+/*-------------------- 
+            NOTE:
+
+In the Design given, the middle card has a margin-top (it has gone down),
+but I have made it so that any card that is hovered gets a margin top (goes down) */
+
+.featuredServices #cards .card:hover {
+   margin-top: 50px;
+}
+
+.featuredServices .card h5, p {
+    justify-content: center;
+    text-align: center;
+}
+
+.featuredServices .card h5 {
+    font-weight: bold;
+}
+
+.featuredServices .card1 {
+    background-color: rgb(104, 106, 251);
+    color: #ffffff;
+}
+
+
+.featuredServices .card2 {
+    background-color: rgb(217, 239, 254);
+}
+
+
+.featuredServices .card3 {
+    background-color: rgb(244, 218, 157);
+}
+
+
+.whyTask {
+    margin-bottom: 150px;
+    width: 100%;
+}
+
+.whyTask .imgcont {
+    width: 600px;
+    margin-right: 20px;
+} 
+
+.whyTask .imgcont img {
+
+    object-fit: cover; 
+    width: 100%;
+}
+
+.whyTask .whyTaskCont {
+    width: 50%;
+}
+
+
+
+.whyTask .whyTaskCont h2 {
+    font-weight: bold;
+    font-size: 50px;
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+
+.whyTask .whyTaskCont p {
+    color: rgb(159, 153, 153);
+    font-size: 1.2rem;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.whyTask .whyTaskCont button {
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 50px;
+    padding: 15px 50px
+    
+}
+
+.workflow .workflowText {
+    padding-right: 40px;
+    text-align: left;
+}
+
+.workflow .workflowText h2 {
+    font-weight: bold;
+    font-size: 50px;
+    margin-bottom: 80px;
+}
+
+.workflow .workflowText p {
+    color: rgb(159, 153, 153);
+    font-size: 1.2rem;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+
+
+.workflow .workflowImg {
+    max-width: 750px; 
+    margin-bottom: 150px;
+    
+}
+
+.workflow .workflowImg img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.trust {
+    margin-top: 150px;
+}
+
+.trust h3 {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+.trustCont {
+    min-height: 600px;
+    width: 100vw;
+    position: relative;
+    
+    
+}
+
+.trustCont h2 {
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 100px;
+    color: rgb(90, 90, 246);
+}
+
+.trustCont #trustImg1 {
+    width: 350px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.trustCont #trustImg2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 350px;
+    
+}
+
+.trustCont #trustImg2 img, 
+#trustImg1 img {
+    object-fit: cover;
+    width: 100%;
+    
+}
+
+hr {
+    margin-bottom: 150px;
+}
+
+
+.final-container > div {
+    text-align: center;
+    margin-bottom: 150px;
+}
+
+.final-container > div h2 {
+    font-weight: bolder;
+    font-size: 50px;
+}
+
+.final-container > div form input {
+    margin-right: 10px;
+    padding: 10px;
+    border: 1px solid rgb(231, 224, 224);
+}
+
+.final-container > div form button {
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 991px) and (max-width: 1400px) {
+
+    /* setting different widths for the input and btn in hero container  */
+    #heroSec01 input {
+        min-width: 150px;
+        max-width: 190px;
+    }
+
+    #heroSec01 button {
+        min-width: 80px;
+        max-width: 150px;
+    }
+
+  }
+  
+ /* to ensure that the the content in .featuredServices container does'nt 
+ overlaps the content is the .whyTask container, the following 2 media queries are add */
+  @media only screen and (min-width: 991px) and (max-width: 1200px) {
+
+    .featuredServices {
+        margin-bottom: 500px;
+    }
+  }
+
+  @media only screen and (max-width: 992px) {
+    .featuredServices {
+        margin-bottom: 900px;
+    }
+  }
+
+
+  /* setting different widths for the img and the .whyTaskCont 
+  container in .whyTask container when size is less tha 144px */
+  @media only screen and (max-width: 1400px) {
+
+    .whyTask .imgcont {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .whyTask .whyTaskCont {
+        width: 100%;
+        text-align: center;
+    }
+  }
+
+  @media only screen and (max-width: 1200px) {
+
+    .trustCont{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .trustCont h2 {
+        position: static;
+    }
+
+    .trustCont #trustImg1 {
+        position: static;
+        margin-left: 30%;
+        margin-bottom: 30px;
+        
+
+    }
+
+    .trustCont #trustImg2 {
+        position: static;
+        margin-left: 30%;
+        margin-top: 30px;
+
+    }
+
+    
+  }
+
+  @media only screen and (max-width: 768px) {
+
+    .trustCont #trustImg1 {
+        margin-left: 25%;
+    }
+
+    .trustCont #trustImg2 {
+        margin-left: 25%;
+    }
+  }
